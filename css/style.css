@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color:cornflowerblue;
+    color: white;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .list {
+    width: 20%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 80%;
+    text-align: center;
+}
+
+.btn {
+    background-color:darkorange;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+.sidebar {
+    transform: scaleX(0);
+    opacity: 0;
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 100vh;
+    transition: 0.5s ease-in;
+    transform-origin: left;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 15px 15px;
+    color:crimson;
+    width: 100%;
+    background-color:greenyellow;
+    border-bottom: 1px solid rgba(150, 141, 141, 0.192);
+}
+
+ul li .searchIcon {
+    cursor: pointer;
+}
+
+ul li .searchBar {
+    margin-left: 15px;
+}
+
+.bar {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+}
+
+input {
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+.cross {
+    background-color:brown;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active {
+    transform: scale(1);
+    opacity: 1;
+}
